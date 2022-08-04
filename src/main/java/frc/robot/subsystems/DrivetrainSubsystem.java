@@ -16,7 +16,15 @@ public class DrivetrainSubsystem extends SubsystemBase {
 
   /** Creates a new DrivetrainSubsystem. */
   public DrivetrainSubsystem() {
+     leftFront = new TalonFX(0);
+     leftBack = new TalonFX(1);
+     rightFront = new TalonFX(2);
+     rightBack = new TalonFX(3);
 
+     leftFront.configFactoryDefault();
+     leftBack.configFactoryDefault();
+     rightFront.configFactoryDefault();
+     rightBack.configFactoryDefault();
   }
 
   public void drive(double speed, double turn){
