@@ -50,11 +50,11 @@ public class RobotContainer {
   }
 
   public static double getSpeed(){
-    return -joystick.getRawAxis(1)*0.6;
+    return 0;
   }
 
   public static double getTurn(){
-    return joystick.getRawAxis(4)*0.3;
+    return 0;
   }
 
   /**
